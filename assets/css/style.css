@@ -1,14 +1,30 @@
 body {
     background-image: 
       url(assets/images/backdrop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Orbitron', sans-serif;  
+    font-family: 'Orbitron', sans-serif; 
+    background-color: royalblue; 
 }
 
 h1 { 
-    background-position: auto;
     background-color: red;
     font-family: 'Orbitron', sans-serif;
-    text-align: auto;
+    text-align: center;
+    font-size-adjust: inherit;
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font: bold;
+}
+
+div {
+    width: autopx;
+    height: autopx;
+    background-color: powderblue;
+        
+}
+
+p {
+    font-size: 100%;
 }

@@ -1,28 +1,76 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-    <script="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+ <head>
+   <link rel="stylesheet" href="assets/css/style.css">
+   <script="https://code.jquery.com/jquery-3.3.1.min.js"
+   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+   crossorigin="anonymous"></script>
+   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 
-    <title>Transformers Trivia</title>
-    <link rel="shortcut icon" href="./assets/images/icon.jpg" type="robot">
-  </head>
+   <title>Transformers Trivia</title>
+   
+ </head>
 
-  <body>
-    <header>
-      <div id="container">
-        <h1>Transformers Trivia Game</h1>
-        <img src="assets/images/robot2.jpg" width="80%"> 
-        <button id="start">Click to begin</button>
-    </header>
-  
-  
-  </body>
+ <body>    
+     <div id="container">
+     <h1>Transformers Trivia Game</h1>
+     <img src="assets/images/robot2.jpg" width="90%">
+     <div class = "questionBox">
+         <div id="title">
+           <h2>welcome to the trivia game</h2>
+           <button class="clickstart">Start</button>
+         
+         <form action="/action_page.php">
+           <p>Who is the leader of the Autobots?</p>
+           <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="right">Optimus Prime
+           <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="wrong">Bumblebee
+           <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="wrong">Iron Hide
+           <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="wrong">Jazz
+        </form>
+         
+         <form action="/action_page.php">
+           <p>What do the robots call home?</p>
+           <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="wrong">Earth
+           <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="wrong">Saturn
+           <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="right">Cybertron
+           <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="wrong">Jupiter
+         </form>
+         
+         <form action="/action_page.php">
+          <p>Who is the leader of the Decepticons?</p>
+          <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="wrong">Soundwave
+          <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="wrong">Unicron
+          <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="wrong">Donald Trump
+          <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="right">Megatron
+        </form>
 
-    
+        <form action="/action_page.php">
+          <p>What is one of things the Transformers fight over in the cartoons of the 80's?</p>
+          <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="wrong">Food
+          <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="wrong">Oil
+          <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="wrong">Girls
+          <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="right">Energon Cubes
+        </form>
+
+        <form action="/action_page.php">
+          <p>What year did the Transformer toys make their debut?</p>
+          <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="wrong">2000
+          <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="wrong">1872
+          <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="wrong">1492
+          <input type="radio" name="browser" onclick="evaluateClick(this.value)" value="right">1984
+        </form>
+         <div class="totals">
+                <p id="correct">Number Correct: </p>
+                <p id="incorrect">Number Wrong: </p>
+
+         </div>
+
+         <div id = "result"></div>
+              
+       </div>
+   <script type="text/javascript" src="assets/javascript/app.js"></script>
+        
+
+   
+       
+ </body>
